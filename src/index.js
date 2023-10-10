@@ -8,28 +8,12 @@ import Contact from "./views/Contact/Contact";
 import Practise from "./views/Practise/Practise";
 import Information from "./views/Information/Information";
 import Post from "./views/Post/Post";
+import Home from "./views/Home/Home";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const routes =createBrowserRouter([
-    {
-        path:"/",
-        element:<Practise/>
-    },
 
-    {
-        path: "/post",
-        element:<Post/>
-
-    },
-    {
-        path:"/post/info/:id",
-        element:<Information/>
-    }
-]
-
-)
   root.render(
-    <RouterProvider router={routes}/> 
+   <Home/>
   )
   
   
