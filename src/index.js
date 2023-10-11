@@ -9,11 +9,11 @@ import Practise from "./views/Practise/Practise";
 import Information from "./views/Information/Information";
 import Post from "./views/Post/Post";
 import Home from "./views/Home/Home";
-
+import TodoApp from "./views/TodaApp/TodoApp";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
   root.render(
-   <Home/>
+  <TodoApp/>
   )
   
   

@@ -1,0 +1,29 @@
+.todo-container{
+    background-color: darkcyan;
+    height: 100%;
+    width: 100%;
+}
+.t-input{
+    padding: 5px;
+    display: block;
+    margin:  auto auto;
+}
+.t-button{
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    margin: auto auto;
+
+}
+.email-box{
+    border: 1px solid white;
+    height: 400px;
+    width: 300px;
+    margin: auto auto;
+    padding: 10px;
+}
+.label-name{
+    font-size: 25px;
+    color: aliceblue;
+    margin-left: 20px;
+}
