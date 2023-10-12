@@ -1,7 +1,16 @@
-.todo-container{
+.big-container{
     background-color: darkcyan;
-    height: 100%;
+    height: 100vh;
     width: 100%;
+
+}
+
+
+.todo-container{
+  
+    display: flex;
+    justify-content: space-around;
+
 }
 .t-input{
     padding: 5px;
@@ -19,11 +28,20 @@
     border: 1px solid white;
     height: 400px;
     width: 300px;
-    margin: auto auto;
+    
     padding: 10px;
 }
 .label-name{
     font-size: 25px;
     color: aliceblue;
     margin-left: 20px;
+}
+.con-box{
+    height: auto;
+    width: auto;
+    padding: 10px;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }

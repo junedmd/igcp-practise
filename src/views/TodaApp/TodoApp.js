@@ -1,4 +1,3 @@
-
 import React from "react";
 import {useState,useEffect } from "react";
 import "./TodoApp.css";
@@ -7,7 +6,7 @@ import "./TodoApp.css";
 export default function TodoApp() {
     const [data,setData]=useState([]);
     const [name, setName] =useState(' ');
-    const [surname, setSurname] =useState(" ");
+    const [number, setNumber] =useState(" ");
 
     useEffect(()=>{
         const storeData =localStorage.getItem("mydata");
@@ -20,37 +19,40 @@ export default function TodoApp() {
 
     const submitForm =(e)=>{
       e.preventDefault();
-    const newData ={name ,surname};
+    const newData ={name ,number};
     const updateData =[...data ,newData];
     localStorage.setItem("mydata",JSON.stringify(updateData));
     setData(updateData);
     console.log(name);
-    console.log(surname);
+    console.log(number);
 
     setName("");
-    setSurname("")
+    setNumber("")
 
-
-   
     }
     return (
         <>
-            <div className="todo-container">
-                <h1 className="text-center text-light"> TodaApp </h1>
-                <div className="email-box">
 
+            <div className="big-container"> 
+            <h1 className=" text-center text-light"> contact app </h1>
+
+
+            <div className="todo-container">
+        
+                <div className="email-box">
+              
                 <label className="label-name"> name</label>
                 <input type="text" placeholder="name" className="t-input" value={name} onChange={(e) => {
                     setName(e.target.value)
                 }} /> <br />
-                     <label className="label-name"> surname</label>
-                <input type="text" placeholder="surname" className="t-input" value={surname}
+                     <label className="label-name"> number</label>
+                <input type="text" placeholder="number" className="t-input" value={number}
                     onChange={(e) => {
-                        setSurname(e.target.value)
+                        setNumber(e.target.value)
                     }}
                 /> <br />
 
-                <button className="t-button" type="button" onClick={submitForm}> add name</button>
+                <button className="t-button" type="button" onClick={submitForm}> add contact</button>
                 </div>
                 
                     <div>
@@ -59,8 +61,11 @@ export default function TodoApp() {
                             data.map((item)=>{
                             return(
                                 <>
+                                <div className="con-box">
                                 <h3 className="text-light"> name :{item.name}</h3>
-                                <h3 className="text-light"> surname :{item.surname}</h3>
+                                <h3 className="text-light"> number :{item.surname}</h3>
+                                </div>
+                                
                                 </>
                             )
                                 
@@ -70,7 +75,7 @@ export default function TodoApp() {
                     </div>
 
             </div>
-
+         </div>
 
         </>
     )
