@@ -59,11 +59,12 @@ export default function TodoApp() {
                         <h1 className="text-danger"> contact in data</h1>
                         {
                             data.map((item)=>{
+                                const {name,number}= item;
                             return(
                                 <>
                                 <div className="con-box">
-                                <h3 className="text-light"> name :{item.name}</h3>
-                                <h3 className="text-light"> number :{item.surname}</h3>
+                                <h3 className="text-light"> name :{name}</h3>
+                                <h3 className="text-light"> number:{number}</h3>
                                 </div>
                                 
                                 </>
