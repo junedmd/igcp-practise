@@ -1,0 +1,49 @@
+.app-conatiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.input-cnatiner{
+    width: 300px;
+    height: 400px;
+    border: 1px solid black;
+    padding: 10px;
+}
+.btn-task{
+    padding: 5px;
+    border: none;
+    width: 100px;
+    background-color: blue;
+    color: aliceblue;
+    border-radius: 10px;
+}
+.name-input{
+    width: 250px;
+    margin-bottom: 20px;
+}
+.card-box{
+    border: 1px solid white;
+    background-color: darkcyan;
+    border-radius: 10px;
+    color: aliceblue;
+    height: auto;
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+.bin-task{
+    padding: 2px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.pen-task{
+    padding: 2px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    left: 200px;
+    bottom: 0px;
+}
